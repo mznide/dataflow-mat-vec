@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;TransposedVec_EngineCode/src/multiply&apos;&#x0A;- Original project: &apos;Copy_Of_Transposed_EngineCode&apos;&#x0A;- Destination element: &apos;TransposedVec_EngineCode/src/multiply&apos;&#x0A;- Original elements:&#x0A;     multiply.MultiplyManager.maxj&#x0A;     multiply.MultiplyKernel.maxj" description="Copy compilation units" destination="=TransposedVec_EngineCode/src&lt;multiply" element1="/src&lt;multiply{MultiplyManager.maxj" element2="/src&lt;multiply{MultiplyKernel.maxj" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1468440053432" units="2" version="1.0"/>
-</session>

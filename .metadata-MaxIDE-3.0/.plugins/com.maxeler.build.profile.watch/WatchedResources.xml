@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ProfileData>
-<Profile javaProject="AMultiplyMatrixMatrixAcceleratedVecLMemOffset_EngineCode" profileFolder="DFE" profileProject="AMultiplyMatrixMatrixAcceleratedVecLMemOffset_RunRules"/>
-<Profile javaProject="AMultiplyMatrixMatrixAcceleratedVecLMemOffset_EngineCode" profileFolder="Simulation" profileProject="AMultiplyMatrixMatrixAcceleratedVecLMemOffset_RunRules">
-<builder name="multiply.MultiplyManager"/>
-</Profile>
-</ProfileData>
