@@ -1,0 +1,51 @@
+package multiply;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.OffsetExpr;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.memory.Memory;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEType;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+import com.maxeler.maxcompiler.v2.utils.MathUtils;
+
+class MultiplyKernel extends Kernel {
+
+	final DFEType intType = dfeUInt(32);
+	final DFEType floatType = dfeFloat(8,24);
+
+	MultiplyKernel(KernelParameters parameters, int nMax) {
+		super(parameters);
+
+		//Needs +1 so we can get scalar Input of size equal to nMax. (with nMax = 64, scalarInput("n") should work for 64 also, not only for 63)
+		final int addrBits = MathUtils.bitsToAddress(nMax+1);
+		DFEType addrType = dfeUInt(addrBits);
+		DFEVar n = io.scalarInput("n", addrType);
+		
+		OffsetExpr loopLength = stream.makeOffsetAutoLoop("loopLength");
+		DFEVar loopLengthVal = loopLength.getDFEVar(this, dfeUInt(8));
+		CounterChain chain = control.count.makeCounterChain();
+		DFEVar i = chain.addCounter(n, 1);
+		DFEVar j = chain.addCounter(n, 1);
+		DFEVar loopCounter = chain.addCounter(loopLengthVal, 1);
+
+		//We read from stream vector input when this variable is True
+		//It will be true in first row at the beginning of each small loop
+		DFEVar readVec = i === 0 & loopCounter === 0;
+		DFEVar vecInput = io.input("vec", dfeFloat(8,24), readVec);
+
+		Memory<DFEVar> ram = mem.alloc(dfeFloat(8,24), nMax+1);
+		ram.write(j, vecInput, readVec);
+
+
+        DFEVar vec = i === 0 & loopCounter === 0 ? vecInput : ram.read(j);
+		DFEVar mat = io.input("mat", floatType, loopCounter === (loopLengthVal-1));
+		DFEVar carriedSum = floatType.newInstance(this);
+		DFEVar sum = j === 0 ? 0.0 : carriedSum;
+		DFEVar newSum = mat * vec + sum;
+
+		carriedSum <== stream.offset(newSum, -loopLength);
+		
+		io.output("vecOutput", newSum, floatType, j === (n - 1) & loopCounter === (loopLengthVal-1));
+	}
+}

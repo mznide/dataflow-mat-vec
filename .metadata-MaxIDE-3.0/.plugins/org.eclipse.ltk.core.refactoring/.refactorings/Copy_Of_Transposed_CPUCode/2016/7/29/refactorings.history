@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Copy_Of_Transposed_CPUCode/TransposedVec.c&apos; to &apos;TransposedVecCpuCode.c&apos;" description="Rename resource &apos;TransposedVec.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="TransposedVec.c" name="TransposedVecCpuCode.c" stamp="1468439441372" updateReferences="true"/>
+</session>

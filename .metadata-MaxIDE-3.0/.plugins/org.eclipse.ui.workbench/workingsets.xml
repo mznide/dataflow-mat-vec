@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet cpuPart="true" editPageId="com.maxeler.maxcompiler.ui.MaxCompilerSetPage" enginePart="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468342471593_0" label="Transposed" location="/home/demo/workspace11/Transposed" maxcompiler="true" name="Transposed" shared="false" state="true">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transposed_EngineCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transposed_CPUCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transposed_RunRules" type="4"/>
+</workingSet>
+<workingSet cpuPart="true" editPageId="com.maxeler.maxcompiler.ui.MaxCompilerSetPage" enginePart="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468342483491_1" label="Tiled" location="/home/demo/workspace11/Tiled" maxcompiler="true" name="Tiled" shared="false" state="true">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tiled_CPUCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tiled_RunRules" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tiled_EngineCode" type="4"/>
+</workingSet>
+<workingSet cpuPart="true" editPageId="com.maxeler.maxcompiler.ui.MaxCompilerSetPage" enginePart="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468342510242_3" label="TiledVec" location="/home/demo/workspace11/TiledVec" maxcompiler="true" name="TiledVec" shared="false" state="true">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TiledVec_EngineCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TiledVec_RunRules" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TiledVec_CPUCode" type="4"/>
+</workingSet>
+<workingSet cpuPart="true" editPageId="com.maxeler.maxcompiler.ui.MaxCompilerSetPage" enginePart="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468342522398_4" label="Basic" location="/home/demo/workspace11/Basic" maxcompiler="true" name="Basic" shared="false" state="true">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Basic_RunRules" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Basic_CPUCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Basic_EngineCode" type="4"/>
+</workingSet>
+<workingSet cpuPart="true" editPageId="com.maxeler.maxcompiler.ui.MaxCompilerSetPage" enginePart="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468342531645_5" label="BasicVec" location="/home/demo/workspace11/BasicVec" maxcompiler="true" name="BasicVec" shared="false" state="true">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/BasicVec_CPUCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/BasicVec_EngineCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/BasicVec_RunRules" type="4"/>
+</workingSet>
+<workingSet cpuPart="true" editPageId="org.eclipse.ui.resourceWorkingSetPage" enginePart="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468440021840_8" label="TransposedVec" location="/home/demo/workspace11/TransposedVec" maxcompiler="true" name="TransposedVec" shared="false" state="true">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TransposedVec_RunRules" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TransposedVec_CPUCode" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TransposedVec_EngineCode" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1468440022333_9" label="Multiple Working Sets" name="Aggregate:Transposed:Tiled:TiledVec:Basic:BasicVec:AMultiplyMatrixMatrixAcceleratedVecLMemOffset:TransposedVec1:TransposedVec:">
+<workingSet IMemento.internal.id="Transposed"/>
+<workingSet IMemento.internal.id="Tiled"/>
+<workingSet IMemento.internal.id="TiledVec"/>
+<workingSet IMemento.internal.id="Basic"/>
+<workingSet IMemento.internal.id="BasicVec"/>
+<workingSet IMemento.internal.id="TransposedVec"/>
+</workingSet>
+</workingSetManager>

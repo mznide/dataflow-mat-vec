@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.cdt.ui.workingSetConfigurations>
+<workingSet name="Basic"/>
+<workingSet name="BasicVec"/>
+<workingSet name="TransposedVec"/>
+<workingSet name="TiledVec"/>
+<workingSet name="Tiled"/>
+<workingSet name="AMultiplyMatrixMatrixAcceleratedVecLMemOffset"/>
+<workingSet name="Transposed"/>
+</org.eclipse.cdt.ui.workingSetConfigurations>
