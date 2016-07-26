@@ -29,6 +29,7 @@ prepare_vec 2
 prepare_vec 4
 prepare_vec 8
 prepare_vec 16
+prepare_vec 32
 
 print_settings
 

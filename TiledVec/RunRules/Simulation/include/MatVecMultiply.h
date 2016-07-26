@@ -7,8 +7,8 @@ extern "C" {
 #endif /* __cplusplus */
 
 #define MatVecMultiply_PCIE_ALIGNMENT (16)
-#define MatVecMultiply_C (16)
-#define MatVecMultiply_vectorSize (1)
+#define MatVecMultiply_C (32)
+#define MatVecMultiply_vectorSize (32)
 
 
 /*----------------------------------------------------------------------------*/
